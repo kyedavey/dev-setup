@@ -5,7 +5,7 @@ echo "Installation starting..."
 echo "Installing Git..."
 sudo add-apt-repository -y ppa:git-core/ppa >/dev/null
 sudo apt-get update >/dev/null
-sudo apt-get install -y git >/dev/null
+sudo apt-get install -y git curl >/dev/null
 
 echo "Cloning Dev Setup..."
 git clone https://github.com/kyedavey/dev-setup.git ~/code/dev-setup >/dev/null
