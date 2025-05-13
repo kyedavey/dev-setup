@@ -8,14 +8,14 @@ sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
 echo "Cloning Dev Setup..."
-git clone https://github.com/kyedavey/dev-setup.git ~/.local/share/dev-setup >/dev/null
+git clone https://github.com/kyedavey/dev-setup.git ~/code/dev-setup >/dev/null
 
 # Ensure computer doesn't go to sleep or lock while installing
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 gsettings set org.gnome.desktop.session idle-delay 0
 
 # Run terminal installers
-for installer in ~/.local/share/dev-setup/install/*.sh; do source $installer; done
+for installer in ~/code/dev-setup/install/*.sh; do source $installer; done
 
 # Revert to normal idle and lock settings
 gsettings set org.gnome.desktop.screensaver lock-enabled true

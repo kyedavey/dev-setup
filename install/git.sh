@@ -1,2 +1,2 @@
 # Link .gitconfig, git was installed during setup
-ln -fs ~/.local/share/dev-setup/configs/.gitconfig ~/.gitconfig
+ln -fs ~/code/dev-setup/configs/.gitconfig ~/.gitconfig
