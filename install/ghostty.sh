@@ -14,3 +14,6 @@ curl -LO "$GHOSTTY_DEB_URL"
 echo "Installing ${GHOSTTY_DEB_FILE}..."
 sudo dpkg -i "$GHOSTTY_DEB_FILE"
 rm "$GHOSTTY_DEB_FILE"
+
+mkdir -p ~/.config/ghostty
+ln -fs ~/code/dev-setup/configs/ghostty/config ~/.config/ghostty/config
