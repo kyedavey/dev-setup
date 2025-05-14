@@ -14,8 +14,10 @@ git clone https://github.com/kyedavey/dev-setup.git ~/code/dev-setup >/dev/null
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 gsettings set org.gnome.desktop.session idle-delay 0
 
-# Run terminal installers
+# Run installers
 for installer in ~/code/dev-setup/install/*.sh; do source $installer; done
+
+gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'Alacritty.desktop', 'code.desktop']"
 
 # Revert to normal idle and lock settings
 gsettings set org.gnome.desktop.screensaver lock-enabled true
