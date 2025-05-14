@@ -17,10 +17,10 @@ rm -rf ~/.config/nvim/.git
 
 # Make everything match the terminal transparency
 mkdir -p ~/.config/nvim/plugin/after
-cp ~/code/dev-setup/configs/nvim/plugin/after/transparency.lua ~/.config/nvim/plugin/after/transparency.lua
+ln -fs ~/code/dev-setup/configs/nvim/plugin/after/transparency.lua ~/.config/nvim/plugin/after/transparency.lua
 
 # Default to Tokyo Night theme
-cp ~/code/dev-setup/configs/nvim/lua/plugins/theme.lua ~/.config/nvim/lua/plugins/theme.lua
+ln -fs ~/code/dev-setup/configs/nvim/lua/plugins/theme.lua ~/.config/nvim/lua/plugins/theme.lua
 
 # Turn off animated scrolling
-cp ~/code/dev-setup/configs/nvim/lua/plugins/snacks-animated-scrolling-off.lua ~/.config/nvim/lua/plugins/snacks-animated-scrolling-off.lua
+ln -fs ~/code/dev-setup/configs/nvim/lua/plugins/snacks-animated-scrolling-off.lua ~/.config/nvim/lua/plugins/snacks-animated-scrolling-off.lua
