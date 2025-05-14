@@ -18,7 +18,7 @@ gsettings set org.gnome.desktop.session idle-delay 0
 for installer in ~/code/dev-setup/install/*.sh; do source $installer; done
 
 # Set gnome bar apps
-gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'Alacritty.desktop', 'code.desktop']"
+gsettings set org.gnome.shell favorite-apps "['Alacritty.desktop', 'google-chrome.desktop',  'code.desktop']"
 
 # Revert to normal idle and lock settings
 gsettings set org.gnome.desktop.screensaver lock-enabled true
