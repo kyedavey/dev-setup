@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 echo "Installation starting..."
 
@@ -13,7 +13,7 @@ git clone https://github.com/kyedavey/dev-setup.git /tmp/dev-setup >/dev/null
 echo "Cloning .dotfiles..."
 git clone https://github.com/kyedavey/.dotfiles.git ~/.dotfiles >/dev/null
 
-if [[ -n "$WSL_DISTRO_NAME" ]]; then
+if [[ -n "${WSL_DISTRO_NAME:-}" ]]; then
   echo "Installing terminal only setup"
   source /tmp/dev-setup/install/core.sh
 else
