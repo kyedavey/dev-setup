@@ -8,4 +8,5 @@ sudo apt-get install -y \
   plocate \
   fd-find \
   tldr \
-  btop
+  btop \
+  >/dev/null
