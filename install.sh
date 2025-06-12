@@ -4,9 +4,7 @@ set -euo pipefail
 
 echo "Installation starting..."
 
-echo "Installing Git..."
-sudo add-apt-repository -y ppa:git-core/ppa >/dev/null
-sudo apt-get update >/dev/null
+echo "Installing Git (PPA for updated version will be added during the software installation phase)"
 sudo apt-get install -y git >/dev/null
 
 echo "Cloning Dev Setup..."
