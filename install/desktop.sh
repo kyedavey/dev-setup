@@ -2,6 +2,9 @@
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 gsettings set org.gnome.desktop.session idle-delay 0
 
+# Symlink Bash Config
+~/.dotfiles/dotfiles.sh -f install bash
+
 for installer in /tmp/dev-setup/install/core/*.sh; do source $installer; done
 for installer in /tmp/dev-setup/install/desktop/*.sh; do source $installer; done
 
