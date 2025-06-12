@@ -13,7 +13,7 @@ echo "Cloning Dev Setup..."
 git clone https://github.com/kyedavey/dev-setup.git /tmp/dev-setup >/dev/null
 
 echo "Cloning .dotfiles..."
-git clone http://github.com/kyedavey/.dotfiles.git ~/.dotfiles >/dev/null
+git clone https://github.com/kyedavey/.dotfiles.git ~/.dotfiles >/dev/null
 
 if [[ -n "$WSL_DISTRO_NAME" ]]; then
   echo "Installing terminal only setup"
