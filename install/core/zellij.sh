@@ -5,3 +5,5 @@ tar -xf zellij.tar.gz zellij
 sudo install zellij /usr/local/bin
 rm zellij.tar.gz zellij
 cd -
+
+~/.dotfiles/dotfiles.sh -f install zellij
